@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Julee&display=swap');
 
+=======
+>>>>>>> 6b0c30e7291ff50bbc9f06741c64a12f1a5a184b
 * {
     margin: 0px;
     padding: 0px;
@@ -27,7 +30,10 @@ header {
 
 header .logo {
     font-weight: bold;
+<<<<<<< HEAD
     font-family: "Julee", cursive;
+=======
+>>>>>>> 6b0c30e7291ff50bbc9f06741c64a12f1a5a184b
     color: #2e4286;
 }
 
@@ -78,8 +84,12 @@ header .logo {
 }
 
 .hero-content h1 {
+<<<<<<< HEAD
     font-size: 3rem;
     font-family: "Julee", cursive;
+=======
+    font-size: 2.5rem; /* Adjust heading size */
+>>>>>>> 6b0c30e7291ff50bbc9f06741c64a12f1a5a184b
     margin-bottom: 10px; /* Space between heading and subheading */
     color: #2e4286; /* Ensure readability */
     
@@ -93,8 +103,12 @@ header .logo {
 }
 
 .hero h1 {
+<<<<<<< HEAD
     font-size: 3rem;
     font-family: "Julee", cursive;
+=======
+    font-size: 2rem;
+>>>>>>> 6b0c30e7291ff50bbc9f06741c64a12f1a5a184b
     margin-bottom: 10px;
 }
 
