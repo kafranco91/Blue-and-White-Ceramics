@@ -766,7 +766,7 @@
     }
 
     .small-images img {
-        width: 250px; /* Set a fixed width for the small images */
+        width: 200px; /* Set a fixed width for the small images */
         height: auto; /* Set the height for consistency */
         flex-shrink: 0; /* Prevent shrinking of images */
         object-fit: cover; /* Ensures images don't stretch */
