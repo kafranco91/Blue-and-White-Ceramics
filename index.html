@@ -38,26 +38,33 @@
     
     <section id="baluster" class="content-section">
         <div class="grid-container">
-            <model-viewer src="img/Baluster-vase,-one-of-three-in-a-five-piece-garniture-(F1980.190--194).glb"
-              alt="A 3D model of an astronaut"
-              ar
-              auto-rotate
-              camera-controls
-              poster src="/img/Baluster vase.jpg">
-                <button class="Hotspot" slot="hotspot-1" data-position="-0.0016812239110861075m 0.2367860817648698m 0.005685758518891859m" data-normal="0.09702459828312782m 0.9042544895486767m 0.4158245368650818m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">top</div>
-                </button>
-                <button class="Hotspot" slot="hotspot-2" data-position="-0.07990898551818704m 0.017538492959787405m -0.031192794473776597m" data-normal="-0.9183026936345112m -0.1090157013733139m -0.3805729098578691m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">image</div>
-                </button>
-            
-            </model-viewer>
+
             <div class="text-content">
                 <h2>Baluster vase, one of three in a five-piece garniture</h2>
                 <p>The vase is decorated with underglaze cobalt blue painting featuring a court lady, a dancer, musicians, and floral motifs. 
                     It provides details about it's construction and decoration, along with its provenance, or ownership history, 
                     tracing its path from the Duveen Brothers art dealership to its current location.</p>
             </div>
+
+            <model-viewer src="img/Baluster-vase,-one-of-three-in-a-five-piece-garniture-(F1980.190--194).glb"
+              alt="A 3D model of an astronaut"
+              ar
+              auto-rotate
+              camera-controls
+              poster src="/img/Baluster vase.jpg">
+                <button id="body" class="Hotspot" slot="hotspot-2" data-position="-0.07990898551818704m 0.017538492959787405m -0.031192794473776597m" data-normal="-0.9183026936345112m -0.1090157013733139m -0.3805729098578691m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Body Decoration</div>
+                </button>
+            </model-viewer>
+
+            <div class="info" id="body-info">
+                    <h3>Body Decoration</h3>
+                    <p>painted in underglaze cobalt blue with a court lady being entertained by a dancer and musicians, floral sprays on
+                        neck, domed cover has ladies, flowers and rocks, and a bud-shaped finial knob.</p>
+                </div>
+            </div>
+
+            
             <div class="small-images">
                 <img src="img/Baluster Stager 2.png" alt="Small Image 2">
                 <img src="img/Baluster Stager 1.png" alt="Small Image 3">
@@ -68,19 +75,42 @@
     
     <section id="incense-burner" class="content-section">
         <div class="grid-container">
+            <div class="text-content">
+                <h2>Incense Burner</h2>
+                <p>It notes that the burner is made of porcelain with a white glaze and features an intricate underglaze blue design depicting a landscape scene. 
+                    It also mentions the use of specific motifs, such as the Eight Precious Things, which are commonly found on Chinese art from the Qing Dynasty.</p>
+            </div>
+
             <model-viewer src="img/incense-burner-f1978-150k-4096.glb"
               alt="A 3D model of an astronaut"
               ar
               auto-rotate
               camera-controls
               poster src="/img/Incense burner.jpg">
-            
+              <button id="body-incense-burner" class="Hotspot" slot="hotspot-1" data-position="0.0036998386497067567m 0.001550871469597065m 0.11579662836468951m" data-normal="0.03044421089257288m 0.2107239849746611m 0.9770714161101671m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Body Decoration</div>
+            </button>
             </model-viewer>
-            <div class="text-content">
-                <h2>Incense Burner</h2>
-                <p>It notes that the burner is made of porcelain with a white glaze and features an intricate underglaze blue design depicting a landscape scene. 
-                    It also mentions the use of specific motifs, such as the Eight Precious Things, which are commonly found on Chinese art from the Qing Dynasty.</p>
+
+            <div class="info" id="body-info-incense-burner">
+                    <h3>Body Decoration</h3>
+                    <p>in underglaze
+                        blue, continuous landscape
+                        around exterior, comprising
+                        of rocks, trees, water,
+                        figures, boats, and pavilions,
+                        executed primarily in outline
+                        and wash, the water in
+                        parallel horizontal lines in
+                        typical K'ang-hsi manner;
+                        around the neck, a band of
+                        motifs comprising five of the
+                        Eight Precious Things, each
+                        alternating with a cloud
+                        scroll.</p>
+                </div>
             </div>
+
             <div class="small-images">
                 <img src="img/Incense Burner Stager 3.png" alt="Small Image 2">
                 <img src="img/Incense Burner Stager 2.png" alt="Small Image 3">
@@ -91,19 +121,34 @@
 
     <section id="bottle-vase" class="content-section">
         <div class="grid-container">
-            <model-viewer src="img/vase-f1991-150k-2048-medium-100k-2048_std_draco.glb"
-            alt="A 3D model of an astronaut"
-            ar
-            auto-rotate
-            camera-controls
-            poster src="/img/Incense burner.jpg">
-            
-        </model-viewer>
             <div class="text-content">
                 <h2>Beaker-shaped vase, from a five-piece garniture</h2>
                 <p>The vase, crafted from white porcelain and decorated in underglaze cobalt blue, features a court scene with ladies in a garden setting. 
                     It provides details about the vase's history, including its previous owners and its provenance, tracing its journey from the Duveen Brothers in New York to its current location.</p>
             </div>
+            
+            <model-viewer src="img/vase-f1991-150k-2048-medium-100k-2048_std_draco.glb"
+            alt="A 3D model of an astronaut"
+            ar
+            auto-rotate
+            camera-controls
+            poster src="/img/Vase.jpg">
+            <button id="body-bottle-vase" class="Hotspot" slot="hotspot-1" data-position="-0.05737504936283472m -0.024255011957845588m 0.006837319818268087m" data-normal="-0.9937267740760835m -0.0265908312044354m 0.10862792541606392m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Body Decoration</div>
+            </button>   
+           </model-viewer>
+
+           <div class="info" id="body-info-bottle-vase">
+                    <h3>Body Decoration</h3>
+                    <p>Tall, cylindrical vase with
+                        narrow neck and outflaring
+                        rim. Blue and white glaze
+                        over gray-white china body.
+                        Mountain and lake
+                        decorative scene.</p>
+                </div>
+            </div>
+
             <div class="small-images">
                 <img src="img/Vase Stager 2.png" alt="Small Image 2">
                 <img src="img/Vase Stager 1.png" alt="Small Image 3">
