@@ -37,7 +37,7 @@
     }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 690px) and (max-width: 768px) {
 
     header {
         padding: 10px 30px;
@@ -145,7 +145,203 @@
         justify-content: center; /* Center content vertically */
         align-items: center; /* Center content horizontally */
         position: absolute;
-        top: 30%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center-align text */
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem; /* Adjust subheading size */
+        color: white; /* Ensure readability */
+        margin: 0; /* Removes default paragraph margins */
+        
+    }
+    
+    .hero h1 {
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+        color: #2e4286; /* Ensure readability */
+    }
+    
+    .content-section {
+        padding: 30px;
+    }
+
+    .grid-container {
+        display: flex; /* Switch to flex layout */
+        flex-direction: column; /* Stack vertically */
+        gap: 15px;
+    }
+
+    .text-and-images {
+        display: flex;
+        flex-direction: column; /* Stack large image and text vertically */
+        gap: 15px;
+    }
+
+    .large-image {
+        order: 2; /* Ensure the image comes first */
+        width: 100%; /* Make the image take up full width */
+        height: auto;
+    }
+
+    .text-content {
+        order: 1; /* Place the text content below the image */
+        padding: 0 15px; /* Add padding for better readability */
+        text-align: left; /* Ensure left-aligned text */
+    }
+
+    .text-content h2 {
+        font-size: 1.2rem; /* Adjust font size for the heading */
+        margin-top: 0px;
+        margin-bottom: 10px; /* Add a slight margin below the heading */
+        margin-left: 0px;
+        color: #333; /* Darker color for better readability */
+    }
+    
+    .text-content p {
+        font-size: .8rem; /* Adjust the paragraph font size */
+        line-height: 1.6; /* Improve readability with proper line spacing */
+        color: #555; /* Slightly lighter color for the paragraph */
+        margin-right:0px; /* Remove any default margins */
+        margin-left: 0px;
+    }
+
+    .small-images {
+        order: 3; /* Small images at the bottom */
+        display: flex; /* Use flexbox to arrange images in a row */
+        gap: 10px; /* Space between images */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Optional: for smooth scrolling snap */
+        padding-bottom: 10px; /* Add some padding for better visibility of the scrollbar */
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+        margin-top: 15px; /* Add space between sections */
+    }
+
+    .small-images img {
+        width: 250px; /* Set a fixed width for the small images */
+        height: auto; /* Set the height for consistency */
+        flex-shrink: 0; /* Prevent shrinking of images */
+        object-fit: cover; /* Ensures images don't stretch */
+        scroll-snap-align: start; /* Optional: aligns the images to the left when scrolling */
+    }
+
+    footer {
+        font-size: .7rem;
+        padding: 30px;
+        height: 80px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 689px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .nav-container {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 45px; /* Adjust based on your header height */
+        right: 0;
+        width: 30%;
+        background-color: #f8f8f8aa; /* Match the header background */
+        z-index: 1000;
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px;
+        padding: 15px;
+        border-top: 1px solid #ddd; /* Optional: separator */
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for visibility */
+        transform: translateY(-20px); /* Start slightly out of view */
+        opacity: 0; /* Make it invisible */
+    }
+
+    .nav-container.active {
+        display: block; /* Show the navigation */
+        transform: translateY(0); /* Reset transform */
+        opacity: 1; /* Make it fully visible */
+    }
+
+    .nav-container .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically for mobile */
+        gap: 15px; /* Add spacing between links */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-container .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        transition: color 0.3s ease; /* Smooth color change on hover */
+    }
+    
+    .nav-container .nav-links a:hover {
+        color: #2e4286; /* Change color when hovering */
+    }
+    
+    .hamburger {
+        display: block; /* Show the hamburger menu */
+        width: 30px;
+        height: 3px;
+        background-color: #333; /* Dark hamburger lines */
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before {
+        top: -10px; /* Place above */
+    }
+
+    .hamburger::after {
+        top: 10px; /* Place below */
+    }
+
+    .hamburger.open {
+        background-color: transparent; /* Hide middle line */
+
+        /* Transform the top and bottom lines into an "X" */
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        position: absolute;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; /* Center-align text */
@@ -159,7 +355,7 @@
     }
     
     .hero h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-bottom: 10px;
         color: #2e4286; /* Ensure readability */
     }
@@ -340,6 +536,36 @@
         color: #333;
     }
 
+    .hero-content {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center-align text */
+    }
+    
+    .hero-content p {
+        font-size: .7rem; /* Adjust subheading size */
+        color: rgb(40, 39, 62); /* Ensure readability */
+        padding-top: 30px;
+        margin-left: 0; /* Removes default paragraph margins */
+        
+    }
+    
+    .hero h1 {
+        font-size: 1rem;
+        padding-top: 0px;
+        color: #2e4286; /* Ensure readability */
+    }
+    
+    .content-section {
+        padding: 30px;
+    }
+
     .grid-container {
         display: flex; /* Switch to flex layout */
         flex-direction: column; /* Stack vertically */
@@ -392,7 +618,7 @@
     }
 
     .small-images img {
-        width: 250px; /* Set a fixed width for the small images */
+        width: 200px; /* Set a fixed width for the small images */
         height: auto; /* Set the height for consistency */
         flex-shrink: 0; /* Prevent shrinking of images */
         object-fit: cover; /* Ensures images don't stretch */
