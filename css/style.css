@@ -135,6 +135,38 @@ img {
     object-fit: contain;
 }
 
+.info {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place even when scrolling */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    z-index: 1000; /* Ensure it stays above other elements */
+    text-align: center;
+    font-family: Arial, sans-serif; /* Consistent font with your design */
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Make .info visible when 'active' class is added */
+.info.active {
+    display: block; /* Display the overlay */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
