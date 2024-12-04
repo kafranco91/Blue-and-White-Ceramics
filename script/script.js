@@ -18,7 +18,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
 // Function to handle the info display for each item
 const handleInfoDisplay = (buttonId, infoId) => {
     const button = document.getElementById(buttonId);
