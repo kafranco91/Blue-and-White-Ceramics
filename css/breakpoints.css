@@ -551,7 +551,7 @@
     .hero-content p {
         font-size: .7rem; /* Adjust subheading size */
         color: rgb(40, 39, 62); /* Ensure readability */
-        padding-top: 30px;
+        padding-top: 45px;
         margin-left: 0; /* Removes default paragraph margins */
         
     }
